@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_green"
+    tools:context=".child_interaction">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="false"
+        android:onClick="onLoginClick"
+        android:src="@drawable/ic_back_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="您與孩子的互動"
+                android:textSize="@dimen/sp_36" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1:從不這樣   2:很少這樣   3:有時這樣   4:經常這樣   5:總是這樣"
+            android:textSize="@dimen/sp_18" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/whiteTextColor"
+            app:cardCornerRadius="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_400">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1.減少負面批評"
+                                android:textColor="#019858"
+                                android:textSize="@dimen/sp_20" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton1_emotions2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="1"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton2_emotions2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="2"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="3"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="4"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="5"
+                                    android:textSize="@dimen/sp_20" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="2.對於孩子好的表現給予口頭讚美"
+                                android:textColor="#019858"
+                                android:textSize="@dimen/sp_20" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="1"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="2"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="3"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="4"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="5"
+                                    android:textSize="@dimen/sp_20" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="3.表現不好時，先讓他充分表達原因，肯定表現好的部分"
+                                android:textColor="#019858"
+                                android:textSize="@dimen/sp_20" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="1"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="2"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="3"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="4"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="5"
+                                    android:textSize="@dimen/sp_20" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="4.與孩子一起面對問題，討論改善策略"
+                                android:textColor="#019858"
+                                android:textSize="@dimen/sp_20" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="1"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="2"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="3"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="4"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="5"
+                                    android:textSize="@dimen/sp_20" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:text="5.安排家人共同活動，如外出用餐、假日出遊 "
+                                android:textColor="#019858"
+                                android:textSize="@dimen/sp_20" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="1"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton22_interaction"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="2"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="3"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton23_emotions2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="4"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton25"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="5"
+                                    android:textSize="@dimen/sp_20" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:text="6.與孩子相處時保持耐心"
+                                android:textColor="#019858"
+                                android:textSize="@dimen/sp_20" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton26"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="1"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="2"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton28"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="3"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="4"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:text="5"
+                                    android:textSize="@dimen/sp_20" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/button9"
+            style="@style/loginButton"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="送出→"
+            android:textSize="@dimen/sp_20"
+            app:initialCornerAngle="27dp"
+            app:spinning_bar_color="#FFF"
+            app:spinning_bar_padding="6dp"
+            app:spinning_bar_width="4dp"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="680dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

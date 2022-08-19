@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="您與孩子的互動"
+        android:icon="@drawable/interaction"
+        android:id="@+id/nav1"
+        />
+
+    <item android:title="兒童情緒溫度計"
+        android:icon="@drawable/temperature"
+        android:id="@+id/nav2"
+        />
+    <item android:title="兒童心情日記"
+        android:id="@+id/nav3"
+        android:icon="@drawable/diary2"
+        />
+    <item android:title="首頁"
+        android:id="@+id/nav4"
+        android:icon="@drawable/house"
+        />
+</menu>
